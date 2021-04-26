@@ -18,4 +18,12 @@ class SectionPagerAdapter(fm: FragmentManager): FragmentPagerAdapter(fm) {
             else -> Fragment_first()
         }
     }
+    override fun getPageTitle(position:Int):CharSequence{
+        return when(position){
+            0 -> "Test 0"
+            1 ->"Test 1"
+            2->"Test 2"
+            else ->""
+        }
+    }
 }
