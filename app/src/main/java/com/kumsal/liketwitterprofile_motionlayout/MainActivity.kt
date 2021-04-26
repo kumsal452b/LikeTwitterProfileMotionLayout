@@ -3,9 +3,7 @@ package com.kumsal.liketwitterprofile_motionlayout
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.fragment.app.FragmentManager
 import androidx.viewpager.widget.ViewPager
-import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 
 class MainActivity : AppCompatActivity() {
@@ -16,10 +14,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         viewPager2=findViewById(R.id.pagerView)
-        tabLayout=findViewById(R.id.tabLayout)
+        tabLayout=findViewById(R.id.tabLayout12)
         adapter= SectionPagerAdapter(supportFragmentManager)
-        tabLayout?.setTabsFromPagerAdapter(adapter)
         tabLayout?.setupWithViewPager(viewPager2)
+        viewPager2?.adapter=adapter
         viewPager2?.setOnScrollChangeListener(object : View.OnScrollChangeListener {
             override fun onScrollChange(
                 v: View?,

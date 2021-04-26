@@ -17,7 +17,7 @@ class PostAdapter:RecyclerView.Adapter<PostAdapter.postHolder>{
 
     inner class postHolder(itemView:View):RecyclerView.ViewHolder(itemView){
         var imageView:CircleImageView=itemView.findViewById(R.id.imageViewForModel)
-        var textViewName:TextView=itemView.findViewById(R.id.textView)
+        var textViewName:TextView=itemView.findViewById(R.id.name)
         var status:TextView=itemView.findViewById(R.id.status)
         fun holderBindElement(name:String,status:String){
             imageView.setImageResource(R.drawable.profil)

@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/test1234"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/activity_main_scene"
     tools:context=".MainActivity">
 
 
     <ImageView
         android:id="@+id/imageViewForModel"
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
+        android:layout_height="20dp"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,6 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewForModel"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/facebook" />
@@ -33,6 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:srcCompat="@drawable/github" />
@@ -42,18 +42,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:srcCompat="@drawable/twitter" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/circleImageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:src="@drawable/profil"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/imageViewForModel" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout12"
@@ -67,26 +68,22 @@
         app:tabTextColor="#03A9F4">
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tab1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Monday" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tab2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tuesday" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tab3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Wednesday" />
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.core.widget.NestedScrollView
-        android:id="@+id/nested"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="#E8D9D9"
@@ -97,7 +94,6 @@
         app:layout_constraintTop_toBottomOf="@+id/tabLayout12">
 
         <LinearLayout
-            android:id="@+id/linearElement"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -115,11 +111,12 @@
         android:id="@+id/button1234"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="108dp"
-        android:background="@drawable/button_background"
-        android:text="Profili düzenle"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/circleImageView"
         app:layout_constraintStart_toStartOf="@+id/circleImageView"
         app:layout_constraintTop_toTopOf="@+id/circleImageView"
         app:layout_constraintVertical_bias="0.557" />
-</androidx.constraintlayout.motion.widget.MotionLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
