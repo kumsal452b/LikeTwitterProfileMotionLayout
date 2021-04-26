@@ -19,5 +19,6 @@ class MainActivity : AppCompatActivity() {
         adapter= SectionPagerAdapter(supportFragmentManager)
         tabLayout?.setTabsFromPagerAdapter(adapter)
         tabLayout?.setupWithViewPager(viewPager2)
+        
     }
 }
