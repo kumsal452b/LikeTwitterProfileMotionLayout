@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageViewForModel"
         android:layout_width="wrap_content"
         android:layout_height="250dp"
         android:scaleType="fitXY"
@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewForModel"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/facebook" />
 
@@ -49,7 +49,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewForModel"
         app:tabIndicatorColor="#03A9F4"
         app:tabRippleColor="#215685"
         app:tabTextColor="#03A9F4">
@@ -88,7 +88,7 @@
                 android:id="@+id/pagerView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:nestedScrollingEnabled="true"/>
+                android:nestedScrollingEnabled="true" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

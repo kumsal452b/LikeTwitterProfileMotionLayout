@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewForModel"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profil" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@id/imageViewForModel"
+            android:text="Aleyna Konuk"
+            android:textColor="#0B0808"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/imageViewForModel"
+            android:text="Yaşamdan izler insanın anlaması noktasnda ki kararlarını
+sorgullatmayı gerektirir"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
