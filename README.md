@@ -1,1 +1,1 @@
-![Alt text](name-of-gif-file.gif) / ![](name-of-gif-file.gif)
+![Alt text](1619482904227.gif) / ![](1619482904227.gif)
