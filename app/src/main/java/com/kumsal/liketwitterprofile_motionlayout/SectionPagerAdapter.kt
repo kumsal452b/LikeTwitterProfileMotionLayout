@@ -20,9 +20,9 @@ class SectionPagerAdapter(fm: FragmentManager): FragmentPagerAdapter(fm) {
     }
     override fun getPageTitle(position:Int):CharSequence{
         return when(position){
-            0 -> "Test 0"
-            1 ->"Test 1"
-            2->"Test 2"
+            0 -> "Paylaşımlar"
+            1 ->"Beğeniler"
+            2->"Diğer"
             else ->""
         }
     }
